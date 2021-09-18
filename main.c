@@ -10,6 +10,11 @@
 #include <sys/stat.h>
 #include <zlib.h>
 
+/* Resources:
+ * https://datatracker.ietf.org/doc/html/rfc7519
+ * See https://spec.smarthealth.cards/#encoding-chunks-as-qr-codes
+ */
+
 static bool scan_token(FILE *fp, const char *token) {
   assert(fp && token && "Invalid input.");
 
@@ -185,6 +190,7 @@ static void read_qr(FILE *fp) {
   read_jws_header(fp);
   putc('\n', stdout);
   read_jws_payload(fp);
+  putc('\n', stdout);
 }
 
 int main(int argc, char **argv) {
