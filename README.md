@@ -27,6 +27,11 @@ Dependencies
 * zlib - https://zlib.net/
 * lib64 - http://sourceforge.net/projects/libb64
 
+References
+----------
+ * JSON Web Token (JWT) - https://datatracker.ietf.org/doc/html/rfc7519
+ * SMART Specification - https://spec.smarthealth.cards/#encoding-chunks-as-qr-codes
+
 Contact
 -------
 Matt Davis: https://github.com/enferex
